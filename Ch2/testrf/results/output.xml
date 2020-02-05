@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20131011 12:40:16.661" generator="Robot 2.7.7 (Python 2.7 on win32)">
+<suite source="E:\repo\RobotFrameworkTestAutomation\Ch2\testrf\testsuites" id="s1" name="Testsuites">
+<suite source="E:\repo\RobotFrameworkTestAutomation\Ch2\testrf\testsuites\1__first_test" id="s1-s1" name="First Test">
+<suite source="E:\repo\RobotFrameworkTestAutomation\Ch2\testrf\testsuites\1__first_test\1__Test_Case_1.txt" id="s1-s1-s1" name="Test Case 1">
+<test id="s1-s1-s1-t1" timeout="" name="Case present">
+<kw type="kw" name="BuiltIn.Should Contain" timeout="">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>Hello world</arg>
+<arg>world</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:16.825" starttime="20131011 12:40:16.825"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20131011 12:40:16.826" critical="yes" starttime="20131011 12:40:16.823"></status>
+</test>
+<test id="s1-s1-s1-t2" timeout="" name="Case not present">
+<kw type="kw" name="BuiltIn.Should Not Contain" timeout="">
+<doc>Fails if `item1` contains `item2` one or more times.</doc>
+<arguments>
+<arg>this is the nation</arg>
+<arg>rule</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:16.829" starttime="20131011 12:40:16.829"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20131011 12:40:16.829" critical="yes" starttime="20131011 12:40:16.827"></status>
+</test>
+<test id="s1-s1-s1-t3" timeout="" name="Case repeated">
+<kw type="for" name="${char} IN [ @{chars} ]" timeout="">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="foritem" name="${char} = a" timeout="">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Run Keyword If" timeout="">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${char}' == 'c'</arg>
+<arg>Exit For Loop</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:16.833" starttime="20131011 12:40:16.833"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Log" timeout="">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is the logged message</arg>
+</arguments>
+<msg timestamp="20131011 12:40:16.834" level="INFO">This is the logged message</msg>
+<status status="PASS" endtime="20131011 12:40:16.834" starttime="20131011 12:40:16.834"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain" timeout="">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>baby</arg>
+<arg>${char}</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:16.834" starttime="20131011 12:40:16.834"></status>
+</kw>
+<status status="PASS" endtime="20131011 12:40:16.834" starttime="20131011 12:40:16.833"></status>
+</kw>
+<kw type="foritem" name="${char} = b" timeout="">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Run Keyword If" timeout="">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${char}' == 'c'</arg>
+<arg>Exit For Loop</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:16.835" starttime="20131011 12:40:16.834"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Log" timeout="">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is the logged message</arg>
+</arguments>
+<msg timestamp="20131011 12:40:16.835" level="INFO">This is the logged message</msg>
+<status status="PASS" endtime="20131011 12:40:16.835" starttime="20131011 12:40:16.835"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain" timeout="">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>baby</arg>
+<arg>${char}</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:16.835" starttime="20131011 12:40:16.835"></status>
+</kw>
+<status status="PASS" endtime="20131011 12:40:16.835" starttime="20131011 12:40:16.834"></status>
+</kw>
+<kw type="foritem" name="${char} = c" timeout="">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Run Keyword If" timeout="">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${char}' == 'c'</arg>
+<arg>Exit For Loop</arg>
+</arguments>
+<kw type="kw" name="BuiltIn.Exit For Loop" timeout="">
+<doc>Immediately stops executing the enclosing for loop.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:16.837" starttime="20131011 12:40:16.836"></status>
+</kw>
+<status status="PASS" endtime="20131011 12:40:16.837" starttime="20131011 12:40:16.835"></status>
+</kw>
+<status status="PASS" endtime="20131011 12:40:16.837" starttime="20131011 12:40:16.835"></status>
+</kw>
+<status status="PASS" endtime="20131011 12:40:16.837" starttime="20131011 12:40:16.833"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20131011 12:40:16.838" critical="yes" starttime="20131011 12:40:16.831"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20131011 12:40:16.838" starttime="20131011 12:40:16.820"></status>
+</suite>
+<suite source="E:\repo\RobotFrameworkTestAutomation\Ch2\testrf\testsuites\1__first_test\2__Test_Case_2.txt" id="s1-s1-s2" name="Test Case 2">
+<test id="s1-s1-s2-t1" timeout="" name="Printing some values">
+<kw type="kw" name="BuiltIn.Log" timeout="">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>this is a dumb drill</arg>
+</arguments>
+<msg timestamp="20131011 12:40:16.851" level="INFO">this is a dumb drill</msg>
+<status status="PASS" endtime="20131011 12:40:16.851" starttime="20131011 12:40:16.851"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20131011 12:40:16.852" critical="yes" starttime="20131011 12:40:16.849"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20131011 12:40:16.853" starttime="20131011 12:40:16.845"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20131011 12:40:16.858" starttime="20131011 12:40:16.815"></status>
+</suite>
+<suite source="E:\repo\RobotFrameworkTestAutomation\Ch2\testrf\testsuites\2__different_file_formats" id="s1-s2" name="Different File Formats">
+<suite source="E:\repo\RobotFrameworkTestAutomation\Ch2\testrf\testsuites\2__different_file_formats\1__a_tsv_file_test.tsv" id="s1-s2-s1" name="A Tsv File Test">
+<test id="s1-s2-s1-t1" timeout="" name="the hulk Test">
+<kw type="kw" name="BuiltIn.Log" timeout="">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is a sample log from a tsv file</arg>
+</arguments>
+<msg timestamp="20131011 12:40:16.981" level="INFO">This is a sample log from a tsv file</msg>
+<status status="PASS" endtime="20131011 12:40:16.981" starttime="20131011 12:40:16.981"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20131011 12:40:16.982" critical="yes" starttime="20131011 12:40:16.978"></status>
+</test>
+<test id="s1-s2-s1-t2" timeout="" name="another case">
+<kw type="kw" name="BuiltIn.Log" timeout="">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${MESSAGE}</arg>
+</arguments>
+<msg timestamp="20131011 12:40:16.985" level="INFO">[u'Hello World!']</msg>
+<status status="PASS" endtime="20131011 12:40:16.985" starttime="20131011 12:40:16.985"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20131011 12:40:16.986" critical="yes" starttime="20131011 12:40:16.983"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20131011 12:40:16.987" starttime="20131011 12:40:16.868"></status>
+</suite>
+<suite source="E:\repo\RobotFrameworkTestAutomation\Ch2\testrf\testsuites\2__different_file_formats\2__a_tsv_file_test.txt" id="s1-s2-s2" name="A Tsv File Test">
+<test id="s1-s2-s2-t1" timeout="" name="the hulk Test">
+<kw type="kw" name="BuiltIn.Log" timeout="">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>This is a sample log from a tsv file</arg>
+</arguments>
+<msg timestamp="20131011 12:40:16.999" level="INFO">This is a sample log from a tsv file</msg>
+<status status="PASS" endtime="20131011 12:40:16.999" starttime="20131011 12:40:16.999"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20131011 12:40:17.010" critical="yes" starttime="20131011 12:40:16.997"></status>
+</test>
+<test id="s1-s2-s2-t2" timeout="" name="another case">
+<kw type="kw" name="BuiltIn.Log" timeout="">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${MESSAGE}</arg>
+</arguments>
+<msg timestamp="20131011 12:40:17.013" level="INFO">[u'Hello World!']</msg>
+<status status="PASS" endtime="20131011 12:40:17.013" starttime="20131011 12:40:17.013"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20131011 12:40:17.013" critical="yes" starttime="20131011 12:40:17.011"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20131011 12:40:17.015" starttime="20131011 12:40:16.993"></status>
+</suite>
+<suite source="E:\repo\RobotFrameworkTestAutomation\Ch2\testrf\testsuites\2__different_file_formats\3__pipe_separated_test.txt" id="s1-s2-s3" name="Pipe Separated Test">
+<test id="s1-s2-s3-t1" timeout="" name="Checking if the substring is fine">
+<kw type="kw" name="BuiltIn.Should Contain" timeout="">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>The Times Of India</arg>
+<arg>India</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:17.027" starttime="20131011 12:40:17.027"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain" timeout="">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>The Times Of India</arg>
+<arg>Of India</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:17.028" starttime="20131011 12:40:17.028"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain" timeout="">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>The Times Of India</arg>
+<arg>Times</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:17.028" starttime="20131011 12:40:17.028"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain" timeout="">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>The Times Of India</arg>
+<arg>mes</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:17.029" starttime="20131011 12:40:17.029"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20131011 12:40:17.029" critical="yes" starttime="20131011 12:40:17.025"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20131011 12:40:17.030" starttime="20131011 12:40:17.021"></status>
+</suite>
+<suite source="E:\repo\RobotFrameworkTestAutomation\Ch2\testrf\testsuites\2__different_file_formats\4__markup_formatted_test.html" id="s1-s2-s4" name="Markup Formatted Test">
+<test id="s1-s2-s4-t1" timeout="" name="Checking if the substring is fine">
+<kw type="kw" name="BuiltIn.Should Contain" timeout="">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>The Times Of India</arg>
+<arg>India</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:17.043" starttime="20131011 12:40:17.043"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain" timeout="">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>The Times Of India</arg>
+<arg>Of India</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:17.044" starttime="20131011 12:40:17.044"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain" timeout="">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>The Times Of India</arg>
+<arg>Times</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:17.044" starttime="20131011 12:40:17.044"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Not Contain" timeout="">
+<doc>Fails if `item1` contains `item2` one or more times.</doc>
+<arguments>
+<arg>The Times Of India</arg>
+<arg>nothing</arg>
+</arguments>
+<status status="PASS" endtime="20131011 12:40:17.045" starttime="20131011 12:40:17.045"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20131011 12:40:17.045" critical="yes" starttime="20131011 12:40:17.040"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20131011 12:40:17.045" starttime="20131011 12:40:17.037"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20131011 12:40:17.053" starttime="20131011 12:40:16.864"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20131011 12:40:17.058" starttime="20131011 12:40:16.662"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="10">Critical Tests</stat>
+<stat fail="0" pass="10">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="10" id="s1" name="Testsuites">Testsuites</stat>
+<stat fail="0" pass="4" id="s1-s1" name="First Test">Testsuites.First Test</stat>
+<stat fail="0" pass="3" id="s1-s1-s1" name="Test Case 1">Testsuites.First Test.Test Case 1</stat>
+<stat fail="0" pass="1" id="s1-s1-s2" name="Test Case 2">Testsuites.First Test.Test Case 2</stat>
+<stat fail="0" pass="6" id="s1-s2" name="Different File Formats">Testsuites.Different File Formats</stat>
+<stat fail="0" pass="2" id="s1-s2-s1" name="A Tsv File Test">Testsuites.Different File Formats.A Tsv File Test</stat>
+<stat fail="0" pass="2" id="s1-s2-s2" name="A Tsv File Test">Testsuites.Different File Formats.A Tsv File Test</stat>
+<stat fail="0" pass="1" id="s1-s2-s3" name="Pipe Separated Test">Testsuites.Different File Formats.Pipe Separated Test</stat>
+<stat fail="0" pass="1" id="s1-s2-s4" name="Markup Formatted Test">Testsuites.Different File Formats.Markup Formatted Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
